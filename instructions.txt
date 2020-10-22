@@ -1,1 +1,3 @@
-Comandos essenciais GIT asdasd
+Comandos essenciais GIT 
+
+git status - 
