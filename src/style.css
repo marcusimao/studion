@@ -1,16 +1,24 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300,400;700;900&display=swap');
 
 *{
     box-sizing: border-box;
+    
 }
 
 :root {
+    --color-primary: #ffc500;
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
+    padding-left: 16.875rem;
+    padding-right: 16.875rem;
+    
+    
 }
 
 body{
     margin: 0;
+    padding-top: 7.75rem;
+ 
     
 }
 
@@ -20,35 +28,61 @@ ul{
     padding-left: 0;
 }
 
-li{
-    margin-right: 0.625rem;
-}
 
 .navbar {
     position: fixed;
     display: grid;
+    z-index: ;
     grid-template-columns: 1fr 9fr;
     align-items: center;
     top: 0;
     left: 0;
     width: 100vw;
+    height: 7.75rem;
     padding: 0 1rem;
     background-color: #000;              /*vermelho,verde,azul,transparência;*/
     color: #fff;
+    padding-left: 16.875rem;
+    padding-right: 16.875rem;
     
-
+    
 }   
 
 .navbar__links {
     justify-self: end;
+    
 }
 
+.navbar__links li{
+    font-size: 0.875rem;
+    margin-right: 3rem;
+    text-transform: uppercase;
+}
 
 .navbar__links a {
     color: #fff;
     text-decoration: none;
+    font-weight: 300;
 }
 
 .navbar__links a:hover {
-    color: gray;
+    color: var(--color-primary);
     }
+
+.logo-studion {
+    font-weight: 900;
+    font-size: 2.375rem;
+    text-transform: uppercase;
+    text-align: right;
+    line-height: 1ch;
+    
+}
+
+.logo-studion__subtitle {
+    font-weight: 300;
+    font-size: 0.875rem;
+}
+
+.copy--primary {
+    color: var(--color-primary);
+}
