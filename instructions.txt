@@ -1,3 +1,0 @@
-Comandos essenciais GIT 
-
-git status - para ver o que tem para fazer commit
