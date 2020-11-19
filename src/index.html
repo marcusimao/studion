@@ -2,6 +2,7 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="stylesheet" href="./style.css">
     
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,6 +11,7 @@
 
 <body>
     <nav class="navbar">
+    <div  class="container navbar__container">
         <h1 class="logo-studion">Studi<span class="copy--primary">on</span>
             <span class="logo-studion__subtitle">Eventos</span>
         </h1>
@@ -21,7 +23,8 @@
             <li><a href="#Contatos">Contatos</a></li>
         </ul>
 
-    </nav>
+    </div>
+</nav>
 
 <header>
 <div id="slider">
@@ -43,24 +46,27 @@
 </div>
 </header>
 <main>
-    <section>
-        <ul>
-            <li><h3>+ de 500 </h3>eventos realizados</li>
-            <li><h3>+ de 1.000.000</h3> de ingressos vendidos</li>
-            <li><h3>+ de 300</h3>empresas atendidas</li>
+    <div class>
+    <section id="counter">
+        <ul class="container counter__container ">
+            <li><h3>+ de 500 <small>eventos realizados</small></h3></li>
+            <li><h3>+ de 1.000.000<small>de ingressos vendidos</small></h3></li>
+            <li><h3>+ de 300<small>empresas atendidas</small></h3></li>
         </ul>
     </section>
-    <section>
-        <div>
-                <img src="./images/institutional.jpg"/>
+</div>
+    <section class="container institutional">
+        <img class="institutional__image" src="./images/institutional.jpg" alt="Studion Institutional"/>
+        <div class="institutional__copy">
                 <h6>fazemos seu evento acontecer</h6>
                 <h4>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</h4>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur saepe hic eveniet explicabo necessitatibus, facere corporis ab exercitationem iure optio accusantium culpa quis, ipsam quod quam, eius provident quaerat totam.</p>
-                <button>saiba mais</button>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <button class="btn btn--institutional">saiba mais</button>
             
         </div>
+    </section>
         <div >
-                <img src="./images/parallax.jpg" width="1080px"/>
+                <!-- <img src="./images/parallax.jpg" width="1080px"/> -->
                 <h6>você informa a temática e nós planejamos um evento com tecnologia</h6>
                 <h2><span>muito+ </span>diversão</h2>
                 <button>fazer cotação</button>
