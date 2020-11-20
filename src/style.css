@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;900&family=Roboto&display=swap');
 * {
   box-sizing: border-box;
@@ -6,16 +7,11 @@
 :root {
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
-  --color-copy: rgb(8, 8, 8);
+  --color-copy: #333;
   --color-primary: #ffc500;
   --default-padding: 1rem;
   color: var(--color-copy);
-
-  /* padding-left: 16.875rem;
-    padding-right: 16.875rem;
-     */
 }
-
 body {
   margin: 0;
   padding-top: 7.75rem;
@@ -57,8 +53,6 @@ ul {
   display: grid;
   grid-template-columns: 1fr 9fr;
   align-items: center;
-  /* padding-left: 16.875rem;
-  padding-right: 16.875rem; */
 }
 
 .navbar__links {
@@ -104,7 +98,7 @@ ul {
 }
 
 .slide {
-  height: calc(100vh - 7.75rem);
+  height: calc(85vh - 7.75rem);
   position: relative;
 }
 
@@ -169,8 +163,7 @@ ul {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   place-items: center;
-  
-  padding: 4.375rem 1rem;
+  padding: 4.375rem 0;
 }
 
 .counter__container h3 {
@@ -223,4 +216,54 @@ margin-bottom: 2.5rem;
 .btn--institutional:hover {
   color: var(--color-copy);
   background: unset;
+  box-shadow: 0 1rem 1rem #0006;
+}
+.quote {
+  background-image: url(./images/parallax.jpg);
+ 
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.quote__container {
+  
+  height: 80vh;
+  display: grid;
+  align-items: center;
+  justify-content: end;
+}
+.quote__copy {
+background-color: #fff;
+padding: 5.625rem 4.375rem;
+}
+
+.quote__copy h6 {
+  line-height: 1.4375rem;
+  font-size: 0.9375rem;
+  font-weight: 400;
+  letter-spacing: 0.1875rem;
+  max-width: 53ch;
+  text-transform: uppercase;
+  margin: 0;
+
+
+}
+.quote__copy h2 {
+  font-size: 5rem;
+  line-height: 5rem;
+  text-transform: uppercase;
+  letter-spacing: -.1875rem;
+  margin:  1.875rem 0;
+  
+} 
+.quote__copy span {
+  display: block;
+} 
+
+.btn--quote {
+  color: var(--color-copy);
+  border-color: var(--color-copy);
+  background: unset; 
 }
